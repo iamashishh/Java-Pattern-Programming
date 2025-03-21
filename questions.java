@@ -59,18 +59,30 @@ class questions {
 
         // Pattern 5
     
-        int n = sc.nextInt();
+        // int n = sc.nextInt();
 
-        for (int i = 1; i <=n; i++) {
+        // for (int i = 1; i <=n; i++) {
             
-            //inner loop 
+        //     //inner loop 
 
-            for (int j = 1; j <=i; j++) {
-                System.err.print(" "+j);                
-            }
-            System.out.println();
+        //     for (int j = 1; j <=i; j++) {
+        //         System.err.print(" "+j);                
+        //     }
+        //     System.out.println();
+        // }
+        
+        // Pattern 6
+
+        int n= sc.nextInt();
+
+        for (int i = n; i >=1; i--) {
+        //inner loop
+        
+        for (int j = 1; j <=i; j++) {
+            System.out.print(j);
         }
-    
+        System.out.println();
+        }
 
     }
 }
