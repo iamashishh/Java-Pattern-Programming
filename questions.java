@@ -193,25 +193,74 @@ class questions {
 
         //pattern 12 (palindromic pyramid)
     
+        // int n= sc.nextInt();
+        // sc.close();
+
+        // for (int i = 1; i <=n; i++) {
+        //     //spaces
+        //     for (int j = 1; j <=n-i; j++) {
+        //         System.out.print(" ");                
+        //     }
+        //     //number
+        //     for (int j =i; j>=1; j--) {
+        //         System.out.print(j);
+        //     }
+        //     //last number
+        //     for (int j = 2; j <=i; j++) {
+        //             System.out.print(j);                
+        //     }
+
+        //     System.out.println();
+        // }
+    
+
+        // pattern 13 (diamond pyramid)
+
         int n= sc.nextInt();
         sc.close();
 
         for (int i = 1; i <=n; i++) {
-            //spaces
+            //upper part
+
             for (int j = 1; j <=n-i; j++) {
-                System.out.print(" ");                
+                System.out.print(" ");
             }
-            //number
-            for (int j =i; j>=1; j--) {
-                System.out.print(j);
+
+            //first star
+            for (int j = 1; j <=i; j++) {
+                System.out.print("*");
             }
-            //last number
+
+            //last star
             for (int j = 2; j <=i; j++) {
-                    System.out.print(j);                
+                System.out.print("*");
             }
 
             System.out.println();
+
         }
+ 
+        for (int i = n; i>=1; i--) {
+            //upper part
+
+            for (int j = 1; j <=n-i; j++) {
+                System.out.print(" ");
+            }
+
+            //first star
+            for (int j = 1; j <=i; j++) {
+                System.out.print("*");
+            }
+
+            //last star
+            for (int j = 2; j <=i; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+
+        }
+   
     }
 
 }
