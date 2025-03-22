@@ -97,25 +97,61 @@ class questions {
             
         // }
 
-        //Pattern 7 (0-1 triangle)
+        //Pattern 8 (0-1 triangle)
 
-        int n= sc.nextInt();
+        // int n= sc.nextInt();
 
+        // for (int i = 1; i <=n; i++) {
+        //     for (int j = 1; j <=i; j++) {
+        //         int sum = i+j;
+        //         if(sum%2==0){
+        //             System.out.print(" 1");
+        //         }
+        //         else{
+        //             System.out.print(" 0");
+        //         }
+        //     }
+
+        //     System.out.println();
+        // }
+
+        // Pattern 9 (butterfly pattern)
+
+        int n = sc.nextInt();
+        sc.close();
+
+        //upper part
         for (int i = 1; i <=n; i++) {
+            //1 part
+            for (int j = 1; j<=i; j++) {
+                System.out.print(" *");
+            }       
+            //spaces
+            for (int j = 1; j <=2*(n-i); j++) {
+                System.out.print("  ");
+            }    
+            //2nd part star
             for (int j = 1; j <=i; j++) {
-                int sum = i+j;
-                if(sum%2==0){
-                    System.out.print(" 1");
-                }
-                else{
-                    System.out.print(" 0");
-                }
+                System.out.print(" *");
             }
 
             System.out.println();
         }
-
-
-
+        //lower part
+        for (int i = n; i>=1; i--) {
+            //1 part
+            for (int j = 1; j<=i; j++) {
+                System.out.print(" *");
+            }       
+            //spaces
+            for (int j = 1; j <=2*(n-i); j++) {
+                System.out.print("  ");
+            }    
+            //2nd part star
+            for (int j = 1; j <=i; j++) {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
     }
 }
