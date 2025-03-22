@@ -117,41 +117,61 @@ class questions {
 
         // Pattern 9 (butterfly pattern)
 
-        int n = sc.nextInt();
+        // int n = sc.nextInt();
+        // sc.close();
+
+        // //upper part
+        // for (int i = 1; i <=n; i++) {
+        //     //1 part
+        //     for (int j = 1; j<=i; j++) {
+        //         System.out.print(" *");
+        //     }       
+        //     //spaces
+        //     for (int j = 1; j <=2*(n-i); j++) {
+        //         System.out.print("  ");
+        //     }    
+        //     //2nd part star
+        //     for (int j = 1; j <=i; j++) {
+        //         System.out.print(" *");
+        //     }
+
+        //     System.out.println();
+        // }
+        // //lower part
+        // for (int i = n; i>=1; i--) {
+        //     //1 part
+        //     for (int j = 1; j<=i; j++) {
+        //         System.out.print(" *");
+        //     }       
+        //     //spaces
+        //     for (int j = 1; j <=2*(n-i); j++) {
+        //         System.out.print("  ");
+        //     }    
+        //     //2nd part star
+        //     for (int j = 1; j <=i; j++) {
+        //         System.out.print(" *");
+        //     }
+        //     System.out.println();
+        // }
+        
+        // pattern 10 (solid rhombus)
+
+        int n= sc.nextInt();
         sc.close();
 
-        //upper part
-        for (int i = 1; i <=n; i++) {
-            //1 part
-            for (int j = 1; j<=i; j++) {
-                System.out.print(" *");
-            }       
-            //spaces
-            for (int j = 1; j <=2*(n-i); j++) {
-                System.out.print("  ");
-            }    
-            //2nd part star
-            for (int j = 1; j <=i; j++) {
-                System.out.print(" *");
-            }
+        for (int i =1; i <=n; i++) {
 
-            System.out.println();
-        }
-        //lower part
-        for (int i = n; i>=1; i--) {
-            //1 part
-            for (int j = 1; j<=i; j++) {
-                System.out.print(" *");
-            }       
-            //spaces
-            for (int j = 1; j <=2*(n-i); j++) {
-                System.out.print("  ");
-            }    
-            //2nd part star
-            for (int j = 1; j <=i; j++) {
-                System.out.print(" *");
+            // spaces
+            for (int j = 1; j <=(n-i); j++) {
+                System.out.print(" ");
+                
+            }
+            //star
+            for (int j = 1; j <=n; j++) {
+                System.out.print("*");
             }
             System.out.println();
         }
     }
+
 }
